@@ -23,3 +23,5 @@ function haversine (a, b) {
   const ht = hav(bLat - aLat) + cos(aLat) * cos(bLat) * hav(bLng - aLng)
   return 2 * R * asin(sqrt(ht))
 }
+
+export default haversine;
